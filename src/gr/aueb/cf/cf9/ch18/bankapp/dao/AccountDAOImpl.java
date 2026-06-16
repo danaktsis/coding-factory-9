@@ -48,5 +48,7 @@ public class AccountDAOImpl implements IAccountDAO{
                 .anyMatch(account -> account.getIban().equals(iban));
     }
 
-
+    public long count() {
+        return accounts.size();
+    }
 }
