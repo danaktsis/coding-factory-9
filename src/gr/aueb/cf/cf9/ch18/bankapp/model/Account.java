@@ -1,35 +1,28 @@
 package gr.aueb.cf.cf9.ch18.bankapp.model;
 
+import java.math.BigDecimal;
 import java.util.Objects;
 
 public class Account {
     private String iban;
-    private double balance;
+    private BigDecimal balance;
 
     public Account() {
 
     }
 
-    public Account(String iban, double balance) {
+    public Account(String iban, BigDecimal balance) {
         this.iban = iban;
         this.balance = balance;
     }
 
-    public String getIban() {
-        return iban;
-    }
+    public String getIban() { return iban; }
 
-    public void setIban(String iban) {
-        this.iban = iban;
-    }
+    public void setIban(String iban) { this.iban = iban; }
 
-    public double getBalance() {
-        return balance;
-    }
+    public BigDecimal getBalance() { return balance; }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
+    public void setBalance(BigDecimal balance) { this.balance = balance; }
 
     @Override
     public String toString() {
